@@ -18,8 +18,7 @@ def mostrar_pib(pib, pais):
     else:
         print("No hay datos para", pais)
 
-# Cargar los datos del archivo
-pib = cargar_pib("estat_sdg_08_10.tsv")
 
-# Pedir el país al usuario
+pib = cargar_pib("estat_sdg_08_10.tsv")
+ 
 mostrar_pib(pib, input("Ingrese el código del país (ej. ES, FR, DE): ").upper())
